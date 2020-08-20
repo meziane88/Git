@@ -13,11 +13,11 @@ git status
 git add (nom de fichier à ajouter)
 git commit -m "un message"
 
-git log          	afiche l'historique de tous les commit
-git log --stat   	afficher un résumé plus court des commits 
-git log -p       	détail des lignes ajoutées et rtirées dans chque commit 
+git log          	Afiche l'historique de tous les commit
+git log --stat   	Affiche un résumé plus court des commits 
+git log -p       	Détail des lignes ajoutées et rtirées dans chque commit 
 git commit --amend    	Modifier le denier message de commit 
-git reset HEAD^     	annule le dermier commit et revient a l'avant dernier/ seul le commit 
+git reset HEAD^     	Annule le dermier commit et revient a l'avant dernier/ seul le commit 
 			est retiré de Git, les fichiers restent modifiés
  		HEAD : dernier commit ;
 
@@ -34,7 +34,7 @@ git reset HEAD^     	annule le dermier commit et revient a l'avant dernier/ seul
 		commence par les mêmes chiffres)
 
 
-git reset --hard HEAD^   	annule les commites et perd tous les changements 
+git reset --hard HEAD^   	annule les commits et perd tous les changements 
 git checkout monfichier  	annule les modifications d'un fichier avant un commit/ le fichier redeviendra 
 				comme il était lors du dernier commit 
 
