@@ -1,0 +1,90 @@
+smail meziane
+
+git 
+git help         	affiche la documentation 
+
+git help init    	affiche la documentation de la fonction init
+
+git clone (le chemin http sur github de projet)
+			permet de récup un projet (depuis github) sur le disque dure
+
+git init
+git status
+git add (nom de fichier à ajouter)
+git commit -m "un message"
+
+git log          	afiche l'historique de tous les commit
+git log --stat   	afficher un résumé plus court des commits 
+git log -p       	détail des lignes ajoutées et rtirées dans chque commit 
+git commit --amend    	Modifier le denier message de commit 
+git reset HEAD^     	annule le dermier commit et revient a l'avant dernier/ seul le commit 
+			est retiré de Git, les fichiers restent modifiés
+ 		HEAD : dernier commit ;
+
+ 		HEAD^ : avant-dernier commit ;
+
+ 		HEAD^^ : avant-avant-dernier commit ;
+
+ 		HEAD~2 : avant-avant-dernier commit (notation équivalente) ;
+
+ 		d6d98923868578a7f38dea79833b56d0326fcba1 : indique un numéro de commit précis ;
+
+ 		d6d9892 : indique un numéro de commit précis (notation équivalente à la précédente, 
+		bien souvent écrire les premiers chiffres est suffisant tant qu’aucun autre commit ne 
+		commence par les mêmes chiffres)
+
+
+git reset --hard HEAD^   	annule les commites et perd tous les changements 
+git checkout monfichier  	annule les modifications d'un fichier avant un commit/ le fichier redeviendra 
+				comme il était lors du dernier commit 
+
+git reset HEAD -- ficher a_supprimer 
+				annuler/supprimer un fichier ajouter avec un git add avant le commit
+
+git pull                        Télécharge les nouveautés depuis le seveur
+
+git push                        envoi des commits sur le seveur
+
+git revert (ID de commit)	annuler un commit publié
+
+git branch				Affiche les branches existantes
+git branche (nom de la branche)		Crée une nouvelle branche
+
+git checkout (nom de la branche)	Se mettre sur une autre branche
+
+git chekout master 			Se mettre sur la branche principale
+git merge (nom de la branche)		fuisionner la branche secondaire dans la branche principale
+
+git branche -d (nom de la branche)	Supprimer la branche après un merge
+git branch-D (nom de la branche)	Supprime la branche avant un merge/ perd tous les changements
+
+git stash 				Mettre de côter le travail en cours avant de changer de branche
+					si on veut pas encore mettre de commit
+git stash apply 			Récupère les changements mis de côté dans ma branche
+
+git branch -r 				Liste toutes les branches dans le serveur
+
+git branch --track nom-a-branchelocale origine/nom-de-brancheseveur
+					Crée une copie d'une branche sur le disque dur 
+					crée une branche locale connectée à la branche de serveur
+					un git pull sur cette branche locale apprte les changements depuis
+					branche serveur
+
+
+git push origin origin:refs/heads/nom_novelle_branche
+					L'ajout d'une branche directement sur le serveur pour travailler à
+					plusieurs
+					après on peut créer une branche locale de la branche du seveur avec
+					git branch --track    
+
+git push origin :heads/nom_branche_a_supprimer
+					supprime une branche sur le serveur
+
+git grep "toco" 			les noms des fichiers qui contiennent le mot toco dans le code source
+
+git grep -n "toco"			donne les numéros des lignes qui contiennent le mot toco 
+      
+
+
+
+
